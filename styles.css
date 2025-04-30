@@ -198,3 +198,109 @@ body {
     height: auto;
     margin-top: 10px;
   }  
+  /* === Responsive Design === */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 10px;
+    display: inline-block;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .side-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .content-box {
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .payment-content {
+    padding: 20px;
+  }
+
+  .payment-image {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .payment-section h2 {
+    font-size: 28px;
+  }
+
+  .about-label {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-label img {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card p,
+  .content-box p,
+  nav a {
+    font-size: 1rem;
+  }
+
+  .about-label h2 {
+    font-size: 1.5rem;
+  }
+
+  .payment-section h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .side-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .content-box {
+    max-width: 100%;
+    width: 90%;
+  }
+}  
