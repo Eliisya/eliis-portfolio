@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eliis Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: url('https://i.pinimg.com/originals/88/00/a6/8800a6b4b7dae9cd53ff1ae4f4c31db4.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #35267f;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a {
+      margin-left: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 50px;
+    }
+
+    .content-box {
+      background-color: rgba(47, 40, 112, 0.7);
+      padding: 30px;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    .content-box p {
+      font-size: 22px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .about-label {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .about-label img {
+      width: 60px;
+      margin-right: 15px;
+    }
+
+    .about-label h2 {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .about-label span {
+      color: #ff99cc;
+      font-weight: bold;
+    }
+
+    .about-label strong {
+      color: #6666ff;
+    }
+
+    .side-image img {
+      max-width: 500px;
+      height: auto;
+    }
+
+    .projects-section {
+      background-color: rgb(53, 49, 139);
+      padding: 60px 40px;
+    }
+
+    .projects-section h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .projects-section h2 span {
+      color: #ff99cc;
+    }
+
+    .projects-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background-color: #4c46b5;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+      margin: 15px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      color: #ff99cc;
+    }
+
+    .payment-section {
+      padding: 60px 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .payment-frame, .pricing-list {
+      background-color: #3a2785;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      color: white;
+    }
+
+    .payment-frame img {
+      width: 150px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .payment-frame p {
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    .pricing-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .price-title {
+      font-size: 28px;
+      background-color: #7b5af1;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      font-family: 'Brush Script MT', cursive;
+      text-align: center;
+      width: 100%;
+    }
+
+    .pricing-item {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+      text-align: left;
+      width: 100%;
+    }
+
+    .pricing-price {
+      font-size: 18px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #7b5af1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/genshin-impact/e/e7/Genshin-citlali.png" alt="Icon" />
+      <span>Eliis</span>
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#payment">Payment</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <p>
+        Greetings! My name is Eliis! A nickname I use since I don’t like using my real name.
+        One of my best hobbies is drawing because I'm an artist mainly on anime and figures!! 
+        I also have many other hobbies like singing, playing piano and sewing! 
+        I hope you a good day and have fun at my page ^^!
+      </p>
+      <div class="about-label">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bda4cd3-8f72-4e2e-aeb5-a7a22d4d54fa/diuvftb-3d6a13dd-7707-4dc2-aa1d-6125f8253e48.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiZGE0Y2QzLThmNzItNGUyZS1hZWI1LWE3YTIyZDRkNTRmYVwvZGl1dmZ0Yi0zZDZhMTNkZC03NzA3LTRkYzItYWExZC02MTI1ZjgyNTNlNDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.h2_WwyEPa-fbFID4kuH6ncc21C2Jvu-pHIU2EzkwSfU" alt="Chibi Icon" />
+        <h2><span>ABOUT</span> <strong>ME!</strong></h2>
+      </div>
+    </div>
+    <div class="side-image">
+      <img src="https://paimon.moe/images/characters/full/citlali.png" alt="Character" />
+    </div>
+  </main>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div style="background-color: #7b5af1; display: inline-block; padding: 10px 30px; border-radius: 30px; margin-bottom: 30px;">
+        <h2 style="font-size: 36px; margin: 0; color: white;">My <span style="color: #ff99cc;">Projects</span></h2>
+      </div>      
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="eli.png" alt="Project 1" />
+      <h3>Soft Portrait</h3>
+      <p>A stylized anime-style portrait with soft shading and pastel tones.</p>
+    </div>
+    <div class="project-card">
+      <img src="elii.jpg" alt="Project 2" />
+      <h3>Sharp Perspective</h3>
+      <p>A character illustration showing perspective and dynamic hand framing.</p>
+    </div>
+    <div class="project-card">
+      <img src="eliii.jpg" alt="WIP Projects" />
+      <h3>WIPs</h3>
+      <p>Here's some WIP that are unfinished but just giving the idea of my art. I can do pixel art too!</p>
+    </div>
+  </div>
+</section>
+
+  <section id="payment" class="payment-section">
+    <div class="payment-frame">
+      <p>PAYMENT WOULD BE<br>VIA PAYPAL OR ROBUX<br>GAMEPASS<br>PURCHASES!</p>
+      <img src="https://img.utdstc.com/icon/d49/c48/d49c4851fcbdecccece71a27cddf0a6bddb23173461e763ec32cd08eeb778c69:200" alt="PayPal Icon">
+    </div>
+    <div class="pricing-list">
+      <div class="price-title">Prices</div>
+      <div class="pricing-item">Portrait:</div>
+      <div class="pricing-price">10$ or 800rb + tax</div>
+      <div class="pricing-item">Half Body:</div>
+      <div class="pricing-price">18$ or 1200rb + tax</div>
+      <div class="pricing-item">Full Body:</div>
+      <div class="pricing-price">30$ or 2500rb + tax</div>
+      <div class="pricing-item">Chibi:</div>
+      <div class="pricing-price">8$ or 650rb + tax</div>
+    </div>
+  </section>
+</body>
+</html>
+<!-- Contact Section -->
+<section id="contact" style="background-color: #35267f; padding: 60px 40px; text-align: center;">
+    <div style="background-color: #7b5af1; display: inline-block; padding: 10px 30px; border-radius: 30px; margin-bottom: 40px;">
+        <h2 style="font-size: 36px; margin: 0; color: white;">Contact <span style="color: #ff99cc;">Me</span></h2>
+      </div>      
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px;">
+    <div style="background-color: #4c46b5; padding: 20px 30px; border-radius: 10px; width: 280px;">
+      <p style="font-size: 20px; margin: 0;">Discord:</p>
+      <strong style="font-size: 22px;">@iqkms</strong>
+    </div>
+    <div style="background-color: #4c46b5; padding: 20px 30px; border-radius: 10px; width: 280px;">
+      <p style="font-size: 20px; margin: 0;">Instagram:</p>
+      <strong style="font-size: 22px;">@elisya._.e</strong>
+    </div>
+  </div>
+</section>
